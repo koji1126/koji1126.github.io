@@ -51,7 +51,6 @@ a {
 
 .scholar {
   background-color: #3b5998;
-  margin-right: 10px;
 }
 
 .twitter {
@@ -240,7 +239,15 @@ footer {
   .top-wrapper .btn {
     width: 100%;
   }
-
+  
+  .researchmap {
+    margin-top: 10px;
+  }
+  
+  .scholar {
+    margin-top: 10px;
+  }
+  
   .twitter {
     margin-top: 10px;
   }
