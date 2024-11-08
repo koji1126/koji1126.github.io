@@ -116,6 +116,10 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
+.header-left a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
 .lesson-wrapper {
   height: 580px;
   padding-bottom: 80px;
@@ -193,14 +197,6 @@ footer {
 }
 
 @media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
 
   footer {
     text-align: center;
@@ -251,16 +247,3 @@ footer {
   .top-wrapper p {
     font-size: 14px;
   }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
