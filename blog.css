@@ -21,6 +21,7 @@ header {
   color: #fff;
   padding: 10px 0;
   text-align: center;
+  margin-bottom: 30px; /* ヘッダーの下に空間を追加 */
 }
 
 header h1 {
@@ -29,7 +30,7 @@ header h1 {
 }
 
 .blog-title {
-  font-size: 28px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 10px;
 }
@@ -45,6 +46,7 @@ header h1 {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* 記事の上に余白を追加してさらに下に移動 */
 }
 
 .blog-content h2 {
