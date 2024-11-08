@@ -84,6 +84,11 @@ header {
   z-index: 10;
 }
 
+.header-left {
+  float: left; /* .header-left の位置を左に揃える */
+  margin-left: -25px; /* .header-right と対称に設定 */
+}
+
 .header-left a {
   line-height: 65px;
   padding: 0 25px;
@@ -93,9 +98,8 @@ header {
   transition: all 0.5s;
 }
 
-.header-left {
-  float: right;
-  margin-right: -25px;
+.header-left a:hover {
+  background-color: rgba(255,255,255,0.3);
 }
 
 .header-right {
@@ -116,9 +120,7 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
-.header-left a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
+
 
 .lesson-wrapper {
   height: 580px;
