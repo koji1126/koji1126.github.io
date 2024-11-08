@@ -96,8 +96,8 @@ header {
   display: block;
   float: left;
   transition: all 0.5s;
-  font-family: Arvo; /* フォント */
-  font-size: 30px; /* 文字サイズ */
+  font-family: Arial; /* フォント */
+  font-size: 25px; /* 文字サイズ */
 }
 
 .header-left a:hover {
