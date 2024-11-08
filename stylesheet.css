@@ -96,6 +96,9 @@ header {
   display: block;
   float: left;
   transition: all 0.5s;
+  font-family: "Helvetica", sans-serif; /* フォント */
+  font-size: 30px; /* 文字サイズ */
+  font-weight: bold; /* 太さ */
 }
 
 .header-left a:hover {
