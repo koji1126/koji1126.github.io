@@ -217,6 +217,9 @@ footer {
   .header-right {
     display: none;
   }
+  .header-left {
+    display: none;
+  }
 
 
 
