@@ -78,8 +78,8 @@ a {
   background-size: contain; /* アスペクト比を保って画像全体を表示 */
   background-repeat: no-repeat;
   background-position: center;
-  width: 250px; /* サイズを大きく */
-  height: 250px; /* 高さも調整 */
+  width: 200px; /* サイズを大きく */
+  height: 200px; /* 高さも調整 */
 }
 
 
@@ -94,7 +94,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px; /* 各ニュース項目の間隔を少し縮める */
-  margin-left: 15px; /* top-imageとの間隔を調整 */
+  margin-left: 20px; /* top-imageとの間隔を調整 */
   width: 200px; /* 幅を小さくする */
 }
 
@@ -102,10 +102,11 @@ a {
   font-size: 24px;
   margin-bottom: 10px;
   opacity: 0.8;
+  text-align: center;
 }
 
 .news ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding-left: 0;
 }
 
