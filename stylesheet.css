@@ -52,8 +52,10 @@ a {
 }
 
 .container {
+    max-width: 1200px; /* コンテンツの幅を制限 */
+    margin: 0 auto; /* コンテンツを中央に揃える */
+    padding: 0 15px; /* 左右の余白を設定 */
     text-align: left;
-    width: 100%;
 }
 
 /* h1と画像を横並びにする */
