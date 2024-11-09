@@ -43,16 +43,17 @@ a {
     z-index: 1; /* 右側の画像は左側画像の下に配置 */
 }
 
-/* top.jpg画像を下に配置 */
 .top-image {
     position: absolute;
-    top: 100%; /* 親要素の下に配置 */
-    right: 15px; /* 右端から少し余白をとる */
+    top: 100%;
+    right: 15px;
     background-image: url('top.jpg');
-    transform: translateY(-100%); /* 100% 下に移動 */
-    width: 200px; /* 画像の幅を指定 */
-    height: auto; /* アスペクト比を維持して高さを自動調整 */
+    transform: translateY(-100%);
+    width: 200px;
+    height: auto;
+    z-index: 3; /* z-indexを調整 */
 }
+
 
 
 
