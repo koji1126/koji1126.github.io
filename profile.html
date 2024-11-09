@@ -21,22 +21,25 @@
   </footer>
 
   <script>
-  // Fetch the Markdown file and display it
-  fetch('https://raw.githubusercontent.com/koji1126/koji1126.github.io/main/profile.md')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP Error! status: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then(text => {
-      document.getElementById('content').innerHTML = marked.parse(text);
-    })
-    .catch(error => {
-      console.error("Error loading markdown file:", error);
-      document.getElementById('profile').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
+    // DOMContentLoadedイベントを使って、DOMが完全に読み込まれてからJavaScriptを実行
+    document.addEventListener("DOMContentLoaded", function() {
+      // Fetch the Markdown file and display it
+      fetch('https://raw.githubusercontent.com/koji1126/koji1126.github.io/main/profile.md')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP Error! status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(text => {
+          document.getElementById('profile').innerHTML = marked.parse(text);
+        })
+        .catch(error => {
+          console.error("Error loading markdown file:", error);
+          document.getElementById('profile').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
+        });
     });
-</script>
+  </script>
 
 </body>
 </html>
