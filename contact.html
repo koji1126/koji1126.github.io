@@ -30,12 +30,13 @@
     return response.text();
   })
   .then(text => {
-    // Convert the Markdown to HTML
-    document.getElementById('content').innerHTML = marked(text);
+    // marked(text) を marked.parse(text) に変更
+    document.getElementById('content').innerHTML = marked.parse(text);
   })
   .catch(error => {
     document.getElementById('content').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
   });
+
 
   </script>
 </body>
