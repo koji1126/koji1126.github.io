@@ -30,8 +30,7 @@
       return response.text();
     })
     .then(text => {
-      // marked() を使用する
-      document.getElementById('profile').innerHTML = marked(text);
+      document.getElementById('content').innerHTML = marked.parse(text);
     })
     .catch(error => {
       console.error("Error loading markdown file:", error);
