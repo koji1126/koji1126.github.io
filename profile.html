@@ -21,23 +21,23 @@
   </footer>
 
   <script>
-    // Fetch the Markdown file and display it
+  // Fetch the Markdown file and display it
   fetch('https://raw.githubusercontent.com/koji1126/koji1126.github.io/main/profile.md')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Markdownファイルが見つかりません');
-    }
-    return response.text();
-  })
-  .then(text => {
-    // marked(text) を marked.parse(text) に変更
-    document.getElementById('content').innerHTML = marked.parse(text);
-  })
-  .catch(error => {
-    document.getElementById('content').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
-  });
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP Error! status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(text => {
+      // marked() を使用する
+      document.getElementById('profile').innerHTML = marked(text);
+    })
+    .catch(error => {
+      console.error("Error loading markdown file:", error);
+      document.getElementById('profile').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
+    });
+</script>
 
-
-  </script>
 </body>
 </html>
