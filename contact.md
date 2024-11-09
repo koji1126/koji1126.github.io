@@ -1,6 +1,6 @@
 # Contact Information
 
-- **Name**: Koji Ishikawa
+- **Name**: 石川 浩史 / Koji Ishikawa
 - **Email**: k.ishikawa[at]zmbh.uni-heidelberg.de
 - **Twitter**: @Hachimaki1126
 - **Location**: Im Neuenheimer Feld 328/R163, D-69120 Heidelberg
