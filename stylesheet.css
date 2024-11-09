@@ -53,9 +53,13 @@ a {
 
 .top-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center; /* 水平方向に中央配置 */
+    align-items: flex-start; /* 垂直方向は上に揃える */
     padding: 180px 0 100px 0;
     color: black;
-    text-align: left;
+    text-align: left; /* テキストを左揃え */
+    width: 100%; /* 幅を100%に設定 */
 }
 
 /* 右側に小さく表示されるように .top-image を設定 */
