@@ -28,7 +28,6 @@ a {
     background-size: cover;
     background-position: center;
     z-index: 2; /* 重なり順を調整 */
-    margin-bottom: 5px; /* 画像下の余白を縮める */
 }
 
 /* 右側の画像 */
@@ -41,9 +40,14 @@ a {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    margin-bottom: 5px; /* 画像下の余白を縮める */
 }
 
+/* 画像の下にある文字を調整する */
+.text-below-left, .text-below-right {
+    margin-top: 5px; /* 画像との距離を調整 */
+    font-size: 16px;
+    text-align: center;
+}
 
 .container {
   width: 100%;
