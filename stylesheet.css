@@ -52,8 +52,7 @@ a {
 
 .container {
   max-width: 1200px; /* コンテンツの幅を制限 */
-  margin: 0 auto; /* コンテンツを中央に揃える */
-  padding: 0 15px; /* 左右の余白を設定 */
+  padding-left: 15px; /* 左側にのみ余白を設定 */
   text-align: left;
 }
 
@@ -70,14 +69,14 @@ a {
   margin: 0;
 }
 
+
 .top-image {
   background-image: url('top.jpg');
   background-size: contain; /* アスペクト比を保って画像全体を表示 */
   background-repeat: no-repeat;
   background-position: center;
-  width: 100px; /* 任意の幅に設定 */
-  height: 100%; /* h1の高さに合わせて自動調整 */
-  aspect-ratio: 1; /* アスペクト比を保つ */
+  width: 200px; /* サイズを大きく */
+  height: 200px; /* 高さも調整 */
 }
 
 
