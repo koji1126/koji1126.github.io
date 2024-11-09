@@ -42,10 +42,10 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: contain; /* 画像のサイズ調整 */
-  background-position: right center; /* 画像を右側に配置 */
-  background-repeat: no-repeat; /* 画像が繰り返されないように設定 */
+  background-image: url('top.jpg'); /* 'top.jpg' に画像パスを設定 */
+  background-size: cover; /* 画像をカバーさせて表示 */
+  background-position: right; /* 画像を中央に配置 */
+  background-repeat: no-repeat; /* 繰り返しなし */
   color: black;
   text-align: left;
 }
