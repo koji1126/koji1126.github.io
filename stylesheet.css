@@ -53,11 +53,10 @@ a {
     display: flex;
     justify-content: center; /* 水平方向に中央配置 */
     align-items: flex-start; /* 垂直方向は上に揃える */
-    padding: 40px 0 60px 0; /* 下の余白を増やす */
+    padding: 45px 0 30px 0; /* 下の余白を増やす */
     color: black;
     text-align: left; /* テキストを左揃え */
     width: 100%; /* 幅を100%に設定 */
-    padding: 40px 0 0 0; /* 上の余白を小さく設定して上に寄せる */
 }
 
 /* 右側に小さく表示されるように .top-image を設定 */
