@@ -11,26 +11,35 @@ a {
   text-decoration: none;
 }
 
-/* 画像の左右分割用のラッパー */
+/* 画像ラッパーの設定 */
 .image-wrapper {
-  display: flex;
-  height: 100vh; /* 画面全体の高さに合わせる */
-  width: 100vw;  /* 画面全体の幅に合わせる */
-  overflow: hidden; /* 画面外にはみ出さないようにする */
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 500px; /* 必要に応じて高さを調整 */
 }
 
-.left-image, .right-image {
-  flex: 1; /* 各要素が画面の半分を占める */
-  background-size: cover;
-  background-position: center;
-}
-
+/* 左側の画像 */
 .left-image {
-  background-image: url('left.jpg');
+    position: absolute;
+    width: 66.6%; /* 画面の約2/3の幅 */
+    height: 100%;
+    background-image: url('left.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 2; /* 重なり順を調整 */
 }
 
+/* 右側の画像 */
 .right-image {
-  background-image: url('right.jpg');
+    position: absolute;
+    left: 50%; /* 表示開始位置を全体の中央に設定 */
+    width: 50%; /* 画面の半分幅に設定 */
+    height: 100%;
+    background-image: url('right.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
 
