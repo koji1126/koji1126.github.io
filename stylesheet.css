@@ -28,6 +28,7 @@ a {
     background-size: cover;
     background-position: center;
     z-index: 2; /* 重なり順を調整 */
+    margin-bottom: 5px; /* 画像下の余白を縮める */
 }
 
 /* 右側の画像 */
@@ -40,6 +41,7 @@ a {
     background-size: cover;
     background-position: center;
     z-index: 1;
+    margin-bottom: 5px; /* 画像下の余白を縮める */
 }
 
 
