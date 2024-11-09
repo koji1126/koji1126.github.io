@@ -64,6 +64,7 @@ a {
     color: black;
     text-align: left; /* テキストを左揃え */
     width: 100%; /* 幅を100%に設定 */
+    padding: 40px 0 0 0; /* 上の余白を小さく設定して上に寄せる */
 }
 
 /* 右側に小さく表示されるように .top-image を設定 */
