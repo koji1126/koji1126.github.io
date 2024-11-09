@@ -99,7 +99,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-left: 20px; /* top-imageとの間隔 */
+  margin-left: 50px; /* top-imageとの間隔 */
 }
 
 .news h2 {
