@@ -46,11 +46,12 @@ a {
 
 .top-wrapper {
   display: flex;
-  align-items: center; /* h1と画像の垂直位置を揃える */
-  padding: 30px 15px; /* 左右に余白 */
-  color: black;
-  text-align: left; /* テキストを左寄せ */
-  justify-content: flex-start; /* 全体を左に寄せる */
+  flex-direction: column;  /* 縦並びにする */
+  justify-content: flex-start;  /* 上に揃える */
+  align-items: flex-start;  /* 左に揃える */
+  width: 100%;
+  padding: 0 15px;  /* 左右の余白 */
+  box-sizing: border-box;  /* ボックスサイズを調整 */
 }
 
 .container {
