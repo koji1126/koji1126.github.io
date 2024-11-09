@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="blog.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
 
+  <div class="container">
+    <article class="profile-content" id="profile">
+      <!-- Markdownの内容がここに表示される -->
+    </article>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Koji Ishikawa. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fetch the Markdown file and display it
+  fetch('https://raw.githubusercontent.com/koji1126/koji1126.github.io/main/profile.md')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Markdownファイルが見つかりません');
+    }
+    return response.text();
+  })
+  .then(text => {
+    // marked(text) を marked.parse(text) に変更
+    document.getElementById('content').innerHTML = marked.parse(text);
+  })
+  .catch(error => {
+    document.getElementById('content').innerHTML = `<p>コンテンツを読み込めませんでした。エラー: ${error.message}</p>`;
+  });
+
+
+  </script>
+</body>
+</html>
