@@ -45,84 +45,84 @@ a {
     z-index: 1; /* 右側の画像は左側画像の下に配置 */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial";
+}
+
+a {
+  text-decoration: none;
+}
 
 .top-wrapper {
   display: flex;
-  align-items: center; /* h1と画像の垂直位置を揃える */
-  padding: 30px 15px; /* 左右に余白 */
+  padding: 30px 15px;
   color: black;
-  text-align: left; /* テキストを左寄せ */
-  justify-content: flex-start; /* 全体を左に寄せる */
+  text-align: left;
+  justify-content: flex-start; /* 左寄せ */
 }
 
 .container {
-  max-width: 1200px; /* コンテンツの幅を制限 */
-  padding-left: 15px; /* 左側にのみ余白を設定 */
-  text-align: left;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .content {
   display: flex;
   align-items: center; /* h1と画像の垂直位置を揃える */
-  gap: 15px; /* h1と画像の間の余白 */
+  gap: 20px; /* h1と画像の間の余白 */
 }
 
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 40px;
   letter-spacing: 3px;
-  margin: 0; /* 上下の余白をなくす */
+  margin: 0;
+  line-height: 1.2; /* 行間を調整 */
 }
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin: 0; /* 上下の余白をなくす */
-  margin-top: 10px; /* pとh1の間隔を調整 */
-  margin-bottom: 20px; /* pの下の余白を縮める */
-}
-
-
 
 .top-image {
   background-image: url('top.jpg');
-  background-size: contain; /* アスペクト比を保って画像全体を表示 */
+  background-size: contain; /* アスペクト比を保ちながら画像全体を表示 */
   background-repeat: no-repeat;
   background-position: center;
-  width: 200px; /* サイズを大きく */
-  height: 200px; /* 高さも調整 */
+  width: 200px; /* 画像の横幅調整 */
+  height: 200px; /* 縦幅調整 */
 }
 
 .news {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* 各ニュース項目の間隔を少し縮める */
-  margin-left: 20px; /* top-imageとの間隔を調整 */
-  width: 200px; /* 幅を小さくする */
-  margin-top: 50px; /* ここで下に移動させる */
-  padding-top: 20px; /* タイトルとコンテンツの間の余白 */
+  gap: 15px;
+  margin-left: 20px; /* top-imageとの間隔 */
 }
 
 .news h2 {
   font-size: 24px;
   margin-bottom: 10px;
   opacity: 0.8;
-  text-align: center;
 }
 
 .news ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 0;
 }
 
 .news li {
   font-size: 16px;
   opacity: 0.7;
-  white-space: normal; /* 通常の折り返し */
-  max-width: 100%; /* 幅を100%に設定 */
 }
 
-
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 20px 0; /* 上下に余白を追加 */
+}
 
 
 /* スマホサイズや小さい画面向けのスタイル調整 */
