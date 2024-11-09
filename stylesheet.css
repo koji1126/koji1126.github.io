@@ -69,8 +69,17 @@ a {
   opacity: 0.7;
   font-size: 40px;
   letter-spacing: 3px;
-  margin: 0;
+  margin: 0; /* 上下の余白をなくす */
 }
+
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 0; /* 上下の余白をなくす */
+  margin-top: 10px; /* pとh1の間隔を調整 */
+  margin-bottom: 20px; /* pの下の余白を縮める */
+}
+
 
 
 .top-image {
@@ -82,20 +91,14 @@ a {
   height: 200px; /* 高さも調整 */
 }
 
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-
 .news {
   display: flex;
   flex-direction: column;
   gap: 15px; /* 各ニュース項目の間隔を少し縮める */
   margin-left: 20px; /* top-imageとの間隔を調整 */
   width: 200px; /* 幅を小さくする */
+  margin-top: 50px; /* ここで下に移動させる */
+  padding-top: 20px; /* タイトルとコンテンツの間の余白 */
 }
 
 .news h2 {
