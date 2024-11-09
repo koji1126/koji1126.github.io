@@ -67,6 +67,7 @@ a {
     position: absolute;
     top: 50%; /* 縦の中央 */
     right: 15px; /* 右端から少し余白をとる */
+    background-image: url('right.jpg');
     transform: translateY(-50%); /* 縦の中央に合わせるための調整 */
     width: 200px; /* 画像の幅を指定 */
     height: auto; /* アスペクト比を維持して高さを自動調整 */
