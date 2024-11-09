@@ -90,6 +90,29 @@ a {
 }
 
 
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px; /* top-imageとの間隔 */
+}
+
+.news h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news li {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
 
 /* スマホサイズや小さい画面向けのスタイル調整 */
 @media all and (max-width: 670px) {
