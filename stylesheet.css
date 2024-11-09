@@ -43,11 +43,14 @@ a {
     z-index: 1; /* 右側の画像は左側画像の下に配置 */
 }
 
+
 .top-wrapper {
   display: flex;
-  justify-content: center;
-  padding: 30px 0; /* 上下の余白 */
+  align-items: center; /* h1と画像の垂直位置を揃える */
+  padding: 30px 15px; /* 左右に余白 */
   color: black;
+  text-align: left; /* テキストを左寄せ */
+  justify-content: flex-start; /* 全体を左に寄せる */
 }
 
 .container {
