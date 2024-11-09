@@ -93,6 +93,7 @@ a {
   background-position: center;
   width: 250px; /* 画像の横幅調整 */
   height: 250px; /* 縦幅調整 */
+  margin-left: 20px;
 }
 
 .news {
