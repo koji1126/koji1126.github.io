@@ -50,14 +50,22 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url('top.jpg'); /* 'top.jpg' に画像パスを設定 */
-  background-size: cover; /* 画像をカバーさせて表示 */
-  background-position: right; /* 画像を中央に配置 */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  color: black;
-  text-align: left;
+    position: relative;
+    padding: 180px 0 100px 0;
+    color: black;
+    text-align: left;
 }
+
+/* 右側に小さく表示されるように .top-image を設定 */
+.top-image {
+    position: absolute;
+    top: 50%; /* 縦の中央 */
+    right: 15px; /* 右端から少し余白をとる */
+    transform: translateY(-50%); /* 縦の中央に合わせるための調整 */
+    width: 200px; /* 画像の幅を指定 */
+    height: auto; /* アスペクト比を維持して高さを自動調整 */
+}
+
 
 .top-wrapper h1 {
   opacity: 0.7;
