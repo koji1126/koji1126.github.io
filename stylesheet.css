@@ -43,44 +43,43 @@ a {
     z-index: 1; /* 右側の画像は左側画像の下に配置 */
 }
 
-.top-image {
-    position: absolute;
-    top: 100%;
-    right: 15px;
-    background-image: url('top.jpg');
-    transform: translateY(-100%);
-    width: 200px;
-    height: auto;
-    z-index: 3; /* z-indexを調整 */
+.top-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    color: black;
 }
-
-
-
 
 .container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+    text-align: left;
+    width: 100%;
 }
 
-.top-wrapper {
-    position: relative;
+/* h1と画像を横並びにする */
+.content {
     display: flex;
-    justify-content: center; /* 水平方向に中央配置 */
-    align-items: flex-start; /* 垂直方向は上に揃える */
-    padding: 30px 0 30px 0; /* 下の余白を増やす */
-    color: black;
-    text-align: left; /* テキストを左揃え */
-    width: 100%; /* 幅を100%に設定 */
-    height: auto; /* 高さを自動で調整（親要素に合わせる） */
+    align-items: center; /* h1と画像の垂直位置を揃える */
+    gap: 15px; /* h1と画像の間の余白 */
 }
-
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 25px;
-  letter-spacing: 3px;
+    opacity: 0.7;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 0;
 }
+
+.top-image {
+    background-image: url('top.jpg');
+    background-size: contain; /* 画像全体を表示し、アスペクト比を保つ */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto; /* アスペクト比に応じた幅に自動調整 */
+    height: 100%; /* h1の高さに合わせる */
+    aspect-ratio: 1; /* アスペクト比を維持 */
+}
+
 
 .top-wrapper p {
   opacity: 0.7;
