@@ -19,7 +19,6 @@ a {
   overflow: hidden; /* 画面外にはみ出さないようにする */
 }
 
-/* 左側の画像 */
 .left-image, .right-image {
   flex: 1; /* 各要素が画面の半分を占める */
   background-size: cover;
@@ -33,6 +32,7 @@ a {
 .right-image {
   background-image: url('right.jpg');
 }
+
 
 .container {
   width: 100%;
