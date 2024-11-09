@@ -11,6 +11,20 @@ a {
   text-decoration: none;
 }
 
+/* 左側の画像 */
+.left-image {
+  background-image: url('left.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 右側の画像 */
+.right-image {
+  background-image: url('right.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
