@@ -93,25 +93,29 @@ a {
 .news {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-left: 20px; /* top-imageとの間隔 */
+  gap: 10px; /* 各ニュース項目の間隔 */
+  margin-left: 15px; /* top-imageとの間隔 */
+  width: 200px; /* 幅を小さく */
 }
 
 .news h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 20px; /* タイトルのフォントサイズはそのまま */
+  margin-bottom: 8px; /* タイトルとリストの間の余白 */
   opacity: 0.8;
+  text-align: center; /* タイトルを中央寄せ */
 }
 
 .news ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0; /* 上下の余白をなくす */
 }
 
 .news li {
-  font-size: 16px;
+  font-size: 14px; /* ニュース項目のフォントサイズはそのまま */
   opacity: 0.7;
 }
+
 
 
 /* スマホサイズや小さい画面向けのスタイル調整 */
