@@ -77,7 +77,7 @@ a {
 .top-wrapper h1 {
   flex: 1; /* h1の幅を残りのスペースいっぱいに広げる */
   opacity: 0.7;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 3px;
   margin: 0;
   line-height: 1.2; /* 行間を調整 */
@@ -90,7 +90,7 @@ a {
 }
 
 .highlight {
-  font-size: 20px; /* a のフォントサイズを大きく */
+  font-size: 25px; /* a のフォントサイズを大きく */
 }
 
 .news {
@@ -98,7 +98,7 @@ a {
   flex-direction: column;
   gap: 15px;
   margin-left: 50px; /* top-imageとの間隔 */
-  width: 1000px;
+  width: 700px;
 }
 
 .news h2 {
