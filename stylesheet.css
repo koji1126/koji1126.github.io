@@ -98,7 +98,7 @@ a {
   flex-direction: column;
   gap: 15px;
   margin-left: 50px; /* top-imageとの間隔 */
-  width: 500px;
+  width: 650px;
 }
 
 .news h2 {
