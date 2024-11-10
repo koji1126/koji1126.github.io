@@ -45,17 +45,14 @@ a {
     z-index: 1; /* 右側の画像は左側画像の下に配置 */
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Arial";
-}
-
-a {
-  text-decoration: none;
+.top-image {
+  background-image: url('top.jpg');
+  background-size: contain; /* アスペクト比を保ちながら画像全体を表示 */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px; /* 画像の横幅調整 */
+  height: 250px; /* 縦幅調整 */
+  margin-left: 30px; /* 20px分右にずらす */
 }
 
 .top-wrapper {
@@ -81,23 +78,14 @@ a {
 .top-wrapper h1 {
   flex: 1; /* h1の幅を残りのスペースいっぱいに広げる */
   opacity: 0.7;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 3px;
   margin: 0;
   line-height: 1.2; /* 行間を調整 */
 }
 
 .highlight {
-  font-size: 30px; /* a のフォントサイズを大きく */
-}
-
-.top-image {
-  background-image: url('top.jpg');
-  background-size: contain; /* アスペクト比を保ちながら画像全体を表示 */
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 250px; /* 画像の横幅調整 */
-  height: 250px; /* 縦幅調整 */
+  font-size: 25px; /* a のフォントサイズを大きく */
 }
 
 .news {
