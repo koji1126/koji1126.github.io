@@ -52,7 +52,6 @@ a {
   background-position: center;
   width: 250px; /* 画像の横幅調整 */
   height: 250px; /* 縦幅調整 */
-  margin-right: 30px; /* 30px分右にずらす */
 }
 
 .top-wrapper {
@@ -78,14 +77,20 @@ a {
 .top-wrapper h1 {
   flex: 1; /* h1の幅を残りのスペースいっぱいに広げる */
   opacity: 0.7;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 3px;
   margin: 0;
   line-height: 1.2; /* 行間を調整 */
 }
 
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 20px 0; /* 上下に余白を追加 */
+}
+
 .highlight {
-  font-size: 25px; /* a のフォントサイズを大きく */
+  font-size: 20px; /* a のフォントサイズを大きく */
 }
 
 .news {
@@ -113,12 +118,6 @@ a {
   opacity: 0.7;
   margin-bottom: 10px;
   line-height: 1.5; /* 行間を1.5倍に設定 */
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin: 20px 0; /* 上下に余白を追加 */
 }
 
 
