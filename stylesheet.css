@@ -52,7 +52,7 @@ a {
   background-position: center;
   width: 250px; /* 画像の横幅調整 */
   height: 250px; /* 縦幅調整 */
-  margin-left: 30px; /* 20px分右にずらす */
+  margin-right: 30px; /* 30px分右にずらす */
 }
 
 .top-wrapper {
