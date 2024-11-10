@@ -79,11 +79,16 @@ a {
 }
 
 .top-wrapper h1 {
+  flex: 1; /* h1の幅を残りのスペースいっぱいに広げる */
   opacity: 0.7;
-  font-size: 16px;
+  font-size: 25px;
   letter-spacing: 3px;
   margin: 0;
   line-height: 1.2; /* 行間を調整 */
+}
+
+.highlight {
+  font-size: 30px; /* a のフォントサイズを大きく */
 }
 
 .top-image {
@@ -91,9 +96,8 @@ a {
   background-size: contain; /* アスペクト比を保ちながら画像全体を表示 */
   background-repeat: no-repeat;
   background-position: center;
-  width: 230px; /* 画像の横幅調整 */
-  height: 230px; /* 縦幅調整 */
-  margin-left: 20px;
+  width: 250px; /* 画像の横幅調整 */
+  height: 250px; /* 縦幅調整 */
 }
 
 .news {
